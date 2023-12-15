@@ -1,0 +1,35 @@
+.cards{
+    padding: 2%;
+}
+.icon{
+    margin-left: 7%;
+}
+.contnet{
+    padding-left: 4%;
+    font-size: 17px;
+}
+.header{
+    font-size: 20px;
+}
+.card{
+    padding: 1%;
+    margin-bottom: 3%;
+    min-width: 300px;
+}
+.text{
+    color: #7d828b;
+}
+.cards hr{
+    height: 80%;
+}
+@media screen and (max-width:645px){
+    .card{
+        min-width: 400px;
+        margin-bottom: 7%;
+    }
+}
+@media screen and (max-width:370px){
+    .card{
+        min-width: 200px;
+    }
+}

@@ -1,0 +1,50 @@
+.top-category{
+    padding: 2%;
+}
+.top-image{
+    /* width: 100px; */
+    position: relative;
+    opacity: 0.8;
+    color: #fff;
+
+}
+.top-image img{
+    width: 100%;
+    height: 80%;
+    border-radius: 1%;
+}
+
+.header{
+    position: absolute;
+    bottom: 18%;
+    right: 7%;
+    font-weight: 500;
+    font-size: 45px;
+    transition: bottom 1s;
+}
+@media screen and (max-width:755px) {
+    .header{
+        font-weight: 500;
+        font-size: 35px;
+    }
+}
+@media screen and (max-width:699px) {
+    .header{
+        font-weight: 500;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:510px) {
+    .header{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:420px) {
+    .header{
+        font-size: 20px;
+    }
+}
+
+.top-image:hover .header{
+    bottom: 25%;
+}

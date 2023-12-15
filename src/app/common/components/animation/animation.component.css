@@ -1,0 +1,89 @@
+.container{
+    margin: 2%;
+    padding: 2%;
+    background-color: lightgreen;
+    /* animation-fill-mode: forwards; */
+    /* width: 100%; */
+}
+.sqr{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    position: relative;
+    animation-name: sqr_animation;
+    animation-duration:5s;
+    animation-delay: 2s;
+    /* animation-iteration-count: infinite; */
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes sqr_animation {
+    0%{left: -100%;}
+    /* 25%{ background-color: red; left: 200px; top: 0;}
+    50%{ background-color: brown; left:200px; top: 200px;}
+    75%{ background-color: yellow; left: 0; top: 200px;} */
+    100%{left: 0%;}
+}
+/* .wrapper{
+    display: inline-flex;
+} */
+
+/* .wrapper .static-txt{
+    font-size: 60px;
+    color: #343F4F;
+    font-weight: 400;
+}
+
+.dynamic-txt li{
+    list-style: none;
+    color:#FC6D6D;
+    font-size: 60px;
+    font-weight: 500;
+    }
+.wrapper .dynamic-txt{
+    margin-left: 15px;
+    /* height: 90px; 
+    line-height: 90px;
+    /* background-color: red;
+    overflow: hidden;
+}
+.dynamic-txt li span{
+    position: relative;
+} */
+/* .dynamic-txt li span::after{
+    content: "";
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-left: 2px solid #FC6D6D;
+    animation-timing-function: linear;
+    animation: typing 2s steps(9) infinite;
+} */
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+.slide1{
+    background-color: red;
+}
+.slide2{
+    background-color: green;
+}
+.slide3{
+    background-color: blue;
+}
+.slide4{
+    background-color: violet;
+}
+.change{
+    height: 200px;
+    display: none;
+}

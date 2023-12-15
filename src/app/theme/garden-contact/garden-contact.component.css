@@ -1,0 +1,149 @@
+.container{
+    background-color: #e2fbe5; 
+}
+.card{
+    color: #fff;
+    height: 150px;
+    background-color: #69af07;
+    box-shadow: 3px 0 24px -10px rgba(0, 0, 0, 0.5) inset;
+    overflow:hidden ;
+    position: relative;
+}
+.header{
+    font-size: x-large;
+    font-weight: 400;
+    text-align: center;
+}
+.number{
+    font-size: 20px;
+    font-weight: 200;
+    margin-right: 4%;
+    border: 2px solid #fff;
+    padding: 2% 3%;
+    border-radius: 50%;
+}
+.hover-visible{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.animatecard:hover .hover-visible{
+    animation: backgroundAnimation 2s ease;
+    animation-fill-mode: forwards;
+    display: block;
+}
+ 
+.animatecard:hover .hover-hide{
+    display: none;
+}
+  
+@keyframes backgroundAnimation {
+    0%{
+        background-color: #69af07;
+        z-index: -1;
+    }
+    100%{
+        background-color: #2c674d;
+        z-index: 1;
+    }
+}
+.hover-hide{
+    flex: 1;
+}
+.hover-text{
+    text-align: center;
+    color: #edfdf0;
+    font-size: 15px;
+}
+.background-integer{
+    font-size: 150px;
+    position: absolute;
+    top: 43%;      
+    left: 35%;
+    opacity: 0.2;
+}
+.hover-head{
+    text-align: center;
+    margin-bottom: 0;
+}
+@media screen and (max-width:935px){
+    .background-integer{
+        top: 43%;      
+        left: 30%;
+    }
+}
+@media screen and (max-width:935px){
+    .background-integer{
+        top: 43%;      
+        left: 25%;
+    }
+}
+.hover-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@media screen and (max-width:599px) {
+   .inner-container div{
+        height: 150px;
+    }
+    .background-integer{
+        left: 35%;
+    }
+}
+@media screen and (max-width:510px) {
+     .background-integer{
+         left: 30%;
+     }
+ }
+ .inner-container{
+    padding: 3%;
+ }
+
+ /* ======================================= */
+
+ .banner{
+    width: 100%;
+    height: 85%;
+}
+.banner_image{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:480px;
+    z-index: -1;
+    opacity: 0.6;
+}
+.banner h1{
+    font-size: 120px;
+    font-weight: 300;
+    color: #2c674d;
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    left: 12%;
+}
+@media screen and (max-width:960px) {
+    .banner_image{
+        height:300px;
+    }
+    .banner h1{
+        font-size: 100px;
+        top: 25%;
+        left: 6%;  
+    }
+}
+@media screen and (max-width:599px) {
+    .banner h1{
+        font-size: 70px;
+    }
+}
+@media screen and (max-width:599px) {
+    .banner h1{
+        font-size: 50px;
+    }
+}

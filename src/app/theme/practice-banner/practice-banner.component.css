@@ -1,0 +1,36 @@
+.banner-bg{
+    height: 600px;
+}
+.banner-image{
+    /* width: 100px; */
+}
+.banner-conetent{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 500px;
+}
+.header-1{
+    /* margin-bottom: 3%; */
+    font-size: 20px;
+}
+.header-2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 45px;
+    font-weight: 600;
+}
+.header-3{
+    /* margin-top: 2%; */
+    font-size: 17px;
+}
+.banner-button{
+    position: absolute;
+    top: 55%;
+    left: 5%;
+}
+.btn{
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 200px;
+}

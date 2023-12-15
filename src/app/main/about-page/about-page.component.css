@@ -1,0 +1,39 @@
+.container{
+    margin: 1%;
+    padding: 1%;
+}
+.hobbies-odd{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 2%;
+    padding: 3%;
+    position:relative;
+    animation-name: animate_odd;
+    animation-duration: 2s;
+
+}
+.hobbies-even{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 2%;
+    padding: 3%;
+    position:relative;
+    animation-name: animate_even;
+    animation-duration: 2s;
+
+}
+.hobbie-content p{
+    font-size: 20px;
+    line-height: 1.6;
+
+}
+.heading h1{
+    font-weight: bold;
+}
+
+@keyframes animate_odd {
+    0%{left: 200%;}
+    100%{left: 0%;}
+}
+@keyframes animate_even {
+    0%{right: 200%;}
+    100%{right: 0%;}
+}

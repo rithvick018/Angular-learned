@@ -1,0 +1,10 @@
+<div fxLayout="column">
+    <div fxLayout="column" mat-dialog-title>
+        <h1 mat-dialog-content fxFlexAlign="center center">{{data.header}}</h1>
+        <p mat-dialog-content fxFlexAlign="center center">{{data.content}}</p>
+    </div>
+    <div fxLayout="row" fxLayoutGap="20px" fxFlexAlign="center" mat-dialog-actions>
+        <button mat-raised-button color="basic" [mat-dialog-close]= "false">No</button>
+        <button mat-raised-button color="primary" [mat-dialog-close]= "true">Yes</button>
+    </div>
+</div>

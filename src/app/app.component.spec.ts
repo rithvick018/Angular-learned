@@ -1,7 +1,14 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { AuthService } from './auth/service/auth.service';
+import { of } from 'rxjs';
 
+class mockAuthService{
+  getMessage(){
+    return of({})
+  }
+}
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -11,6 +18,9 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      providers:[
+        {provide: AuthService, useClass:mockAuthService}
+      ]
     }).compileComponents();
   });
 

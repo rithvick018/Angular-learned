@@ -1,0 +1,127 @@
+.container{
+    background-color: #e2fbe5;
+    padding: 3%; 
+    /* height: 100%;    */
+}
+.headers h5{
+    color: #30b13a;
+    font-size: 13px;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+.headers h1{
+    color: #1b6121;
+    font-size: 35px;
+    font-weight: 450;
+    letter-spacing: 0.5px;
+}
+.team{
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+.members{
+    margin-top: 3%;
+    padding: 0 1% 0 1%;
+}
+.member_image{
+ border-radius: 5px;
+}
+.member_detail{
+    width: 70%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    border-radius: 5%;
+    position: absolute;
+    top: 83%;
+    left: 15%;
+}
+.imageDiv{
+    position: relative;
+    /* margin-bottom: 10%; */
+}
+@media screen and (max-width: 959px){
+    .imageDiv {
+      margin-bottom: 10%;
+    }
+  }
+  /* @media screen and (max-width: 600px) {
+    .imageDiv {
+      margin-bottom: 7%;
+    }
+  } */
+.member_detail h6{
+    margin-bottom: 0;
+    color: #30b13a;
+    font-size: 13px;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+.member_detail h5{
+    /* color: #381f13; */
+    font-size: 15px;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+
+.working_members{
+    margin-top: 10%;
+
+}
+.working_members h1{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #30b13a;
+}
+
+.working_members h2{
+    color: #1b6121;
+    font-size: 30px;
+    font-weight: 900;
+    /* letter-spacing: 0.5px; */
+}
+.header{
+    margin-top: 4%;
+}
+.content{
+    width: 55%;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: gray;
+}
+.goals div{
+    color: #fff;
+    width: 270px;
+    height: 250px;
+}
+.goal1{
+    background-color: #32ce3f;  
+    padding: 2%;
+}
+.goal2{
+    background-color: #2cb938;
+    padding: 2%;
+}
+.goal3{
+    background-color: #1eb32a;
+    padding: 2%;
+}
+.goal4{
+    background-color: #119c1d;
+    padding: 2%;
+}
+.goals p{
+    text-align: center;
+}
+.goals span{
+    font-size: 40px;
+}
+.goals h5{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 15px;
+}
+
+

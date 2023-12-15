@@ -1,0 +1,25 @@
+.container{
+    margin: 1%;
+    padding: 1%;
+}
+.form-container{
+    /* box-shadow: #64646f33 0px 7px 29px 0px; */
+    padding: 30px;
+    background-color: #eef7fc;
+}
+.form-container h1{
+    font-weight: 500;
+}
+mat-form-field{
+    width: 100%;
+}
+.button{
+    width: 150px;
+}
+.container2{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2%;
+}
+.image-container img{
+    width: 100%;
+}

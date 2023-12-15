@@ -1,0 +1,47 @@
+<!-- 
+<div>
+    <app-nav-bar></app-nav-bar>
+</div>  -->
+<div class="container" fxLayout="row" fxLayoutAlign="center center">
+    <div fxLayout="row" fxFlex="60%">
+        <div fxFlex="50%" class="image-container" fxLayoutAlign="center center">
+            <img   class="img" src="../assets/user-login.png">
+        </div>
+        <div class="form-container" fxFlex="50%">
+            <h1 fxLayoutAlign="center">Login Form</h1>
+            <form [formGroup]="loginForm" >
+                <div fxLayout="column" fxLayoutGap="0">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input type="email" matInput formControlName="email">
+                        <mat-error *ngIf="loginForm?.get('email')?.hasError('required')">
+                            {{messages?.EMAIL_IS_REQUIRED}}
+                        </mat-error>
+                        <mat-error *ngIf="loginForm?.get('email')?.hasError('email')">
+                            {{messages?.INVALID_EMAIL}}
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input type="password" matInput formControlName="password">
+                        <mat-error *ngIf="loginForm?.get('password')?.hasError('required')">
+                            {{messages?.PASSWORD_REQUIRED}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="column"  fxLayoutGap="5%">
+                    <div fxLayout="row" >
+                        <button mat-icon-button color="primary" (click)="forgotPassword()">Forgot password ?</button>
+                    </div>
+                    <div fxLayout="row" fxLayoutAlign="center ceneter">
+                        <button mat-raised-button color="primary" (click)="onSubmit()">submit</button>
+                    </div>
+                </div>
+                <div class="navigate">
+                        <p>Don't have an account..? <span (click)="navigateSignup()" class="link-style">Sign up here.!</span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</div>

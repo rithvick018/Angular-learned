@@ -1,0 +1,24 @@
+<div class="container">
+    <div class=" banner" >
+        <img class="banner_image" src="./assets/garden_banner3.jpg">
+        <h1>About Us</h1>
+    </div>
+    <div class="row_reverse" fxLayout="row">
+        <div fxFlex="10%"></div>
+        <div class="insideContainer">
+          <div [fxLayout]="(i % 2 === 0)?'row':'row-reverse'" *ngFor="let item of images ;let i=index" fxLayoutAlign="center center" fxLayout.lt-md="column" class="revesed_content" >
+              <div fxFlex="50%" fxHide.lt-sm>
+                <img fxFlex="100%"class="img1" [src]="images[i]?.imageUrl">
+              </div>
+              <div class="hov" fxFlex="50%"  fxFlex.lt-sm="80%">
+                    <h2 class="content_header" fxLayoutAlign.lt-md="center center">{{item.heading}}</h2>
+                    <p class="content">{{item.desc}}</p>
+              </div>
+            </div>
+        </div>
+        <div fxFlex="10%"></div>
+    </div>
+    
+</div>
+<app-garden-team></app-garden-team>
+<app-gardening></app-gardening>

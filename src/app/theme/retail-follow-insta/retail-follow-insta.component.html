@@ -1,0 +1,11 @@
+<div class="container" fxLayout="column" fxLayoutGap="2%">
+    <div class="header">
+        Follow Us On Instagram
+    </div>
+    <div class="images"   fxLayout="row wrap" fxLayoutGap="3%"  fxLayoutAlign="center">
+        <div  *ngFor="let item of instaImages" fxFlex="22%" fxFlex.lt-md="35%" fxFlex.lt-sm="45%" class="inside-container">
+            <img class="image" [src]="item.imageUrl" fxFlex="100%">
+            <img [src]="item.hoverIcon" class="hover-image">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    /* margin: 100px; */
+    width: 100%;
+    height: 90%;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+
+}
+.form-container {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+    width: 50%;
+}
+
+mat-form-field{
+    width: 100%;
+}
+.navigate{
+    margin-top: 5%;
+}
+.link-style {
+    color: blue; 
+    text-decoration: underline; 
+    cursor: pointer; 
+  }
+  .image-container{
+    background-color: #f8f6f6;
+  }
+  .img{
+    height: 300px;
+    width: 250px;
+  }

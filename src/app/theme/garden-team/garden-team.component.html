@@ -1,0 +1,68 @@
+<div class="container">
+    <div class="team">
+        <div class="headers" fxLayout="column" fxLayoutAlign="center center">
+            <h5>OUR TEAM</h5>
+            <h1>Meet Our Dedicated Team</h1>
+        </div>
+        <div class="members"  fxLayout="row wrap"  fxLayoutAlign="center center">
+            <div *ngFor="let item of teamMembers" class="imageDiv" fxFlex="25%" fxFlex.lt-md="40%" fxFlex.lt-sm="70%">
+                    <div fxLayoutAlign="center">
+                        <img class="member_image" [src]="item.link"  fxFlex="85%">
+                    </div>
+                   <div class="member_detail" fxLayoutAlign="center" fxLayout="column">
+                        <h6  fxLayoutAlign="center">{{item.position | uppercase}}</h6>
+                        <h5  fxLayoutAlign="center">{{item.name}}</h5>
+                   </div>
+   
+            </div>
+           
+        </div>
+    </div>
+    <div class="working_members">
+        <div class="header" fxLayout="column" fxLayoutAlign="center center">
+            <h1>1500+</h1>
+            <h2>PEOPLE WORKING WIRH US</h2>
+            <p class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae tenetur quos optio repellendus fugiat sit labore, assumenda itaque suscipit.</p>  
+        </div>
+        <div class="goals" fxLayout="row" fxLayoutAlign="center"  fxLayout.lt-sm="column"  fxLayoutAlign.lt-sm="center center">
+            <div class="goal1" fxLayout="column"fxLayoutAlign="center center">
+                <span class="material-symbols-outlined">
+                    recycling
+                </span>
+                <h5>
+                    RECYCLING
+                </h5>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit.dolor sit amet </P>
+            </div>
+            <div class="goal2" fxLayout="column"fxLayoutAlign="center center">
+                <span class="material-symbols-outlined">
+                    compost
+                </span>
+                <h5>
+                    ORGANIC
+                </h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.dolor sit amet</p>
+            </div>
+            <div class="goal3" fxLayout="column"fxLayoutAlign="center center">
+                <span class="material-symbols-outlined">
+                    wind_power
+                </span>
+                <h5>
+                    ECO SYSTEM
+                </h5>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit.dolor sit amet </P>
+            </div>
+            <div class="goal4" fxLayout="column"fxLayoutAlign="center center">
+                <span class="material-symbols-outlined">
+                    diversity_2
+                </span>
+                <h5>
+                    BIOLOGY
+                </h5>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit.dolor sit amet </P>
+            </div>
+        </div>
+    </div>
+</div>
+
+

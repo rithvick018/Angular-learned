@@ -1,0 +1,81 @@
+<div class="container">
+    <div class="form-container">
+        <h1 fxLayoutAlign="center">Registration Form</h1>
+        <form [formGroup]="userForm">
+            <div fxLayout="row" fxLayoutGap="5%" fxLayout.lt-md="column" fxLayoutGap.lt-md="0">
+                <div fxFlex="50%">
+                    <mat-form-field appearance="outline">
+                        <mat-label>First name</mat-label>
+                        <input type="text" matInput formControlName="firstName">
+                        <mat-error *ngIf="userForm?.get('firstName')?.hasError('required')">
+                            {{messages.REQUIRED_FORM_FIELD}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div fxFlex="50%">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Last name</mat-label>
+                        <input type="text" matInput formControlName="lastName">
+                        <mat-error *ngIf="userForm?.get('lastName')?.hasError('required')">
+                            {{messages.REQUIRED_FORM_FIELD}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="row" fxLayoutGap="5%" fxLayout.lt-md="column" fxLayoutGap.lt-md="0">
+                <div fxFlex="50%">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email id</mat-label>
+                        <input type="email" matInput formControlName="email" >
+                        <mat-error *ngIf="userForm?.get('email')?.hasError('required')">
+                            {{messages.EMAIL_IS_REQUIRED}}
+                        </mat-error>
+                        <mat-error *ngIf="userForm?.get('email')?.hasError('email')">
+                            {{messages.INVALID_EMAIL}}
+                        </mat-error>
+                        <mat-error *ngIf="userForm?.get('email')?.hasError('emailExist')">
+                            {{messages.EMAIL_ALREADY_EXISTS}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div fxFlex="50%">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input type="password" matInput formControlName="password">
+                        <mat-error *ngIf="userForm?.get('password')?.hasError('required')">
+                            {{messages.PASSWORD_REQUIRED}}
+                        </mat-error>
+                        <mat-error *ngIf="userForm?.get('password')?.hasError('minLength')">
+                            {{messages.PASSWORD_REQUIRED_MIN}}
+                        </mat-error>
+                        <mat-error *ngIf="userForm?.get('password')?.hasError('maxLength')">
+                            {{messages.PASSWORD_REQUIRED_MAX}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="row" fxLayoutGap="5%" fxLayout.lt-md="column" fxLayoutGap.lt-md="0">
+                <div fxFlex="50%">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Date of birth</mat-label>
+                        <input matInput [matDatepicker]="dateOfBirth" formControlName="dateOfBirth">
+                        <mat-datepicker-toggle matSuffix [for]="dateOfBirth"></mat-datepicker-toggle>
+                        <mat-datepicker #dateOfBirth></mat-datepicker>
+                        <mat-error *ngIf="userForm?.get('dateOfBirth')?.hasError('required')">
+                            {{messages.REQUIRED_FORM_FIELD}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div fxFlex="50%">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Write a passage</mat-label>
+                        <textarea matInput rows="1"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center ceneter">
+                <button mat-raised-button color="primary" (click)="onSubmit()">submit</button>
+            </div>
+        </form>
+    </div>
+</div>

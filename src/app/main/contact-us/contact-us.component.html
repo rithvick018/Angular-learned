@@ -1,0 +1,73 @@
+<!-- <div fxLayout="row" >
+    <app-nav-bar fxFlex="100" ></app-nav-bar>
+</div> -->
+<div class="container">
+    <div fxLayout="row" class="container2">
+        <div class="form-container" fxFlex="50%">
+            <h1>Ask your doubts?</h1>
+            <form  [formGroup]="contactForm" #formDirective="ngForm" (ngSubmit)="onSubmit(formDirective)">
+                <div fxLayout="row" fxLayoutGap="4%">
+                    <mat-form-field appearance="outline" fxFlex="50%">
+                        <mat-label>First name</mat-label>
+                        <input matInput type="text" formControlName="firstName">
+                        <mat-error *ngIf="contactForm?.get('firstName')?.hasError('required')">
+                            {{ (message|async)?.REQUIRED_FORM_FIELD}}
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" fxFlex="50%">
+                        <mat-label>Last name</mat-label>
+                        <input matInput type="text" formControlName="lastName">
+                        <mat-error *ngIf="contactForm?.get('lastName')?.hasError('required')">
+                            {{ (message|async)?.REQUIRED_FORM_FIELD}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput type="email" formControlName="email">
+                        <mat-error *ngIf="contactForm?.get('email')?.hasError('required')">
+                            {{(message|async)?.EMAIL_IS_REQUIRED}}
+                        </mat-error>
+                        <mat-error *ngIf="contactForm?.get('email')?.hasError('email')">
+                            {{(message|async)?.INVALID_EMAIL}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row"  fxLayoutGap="4%">
+                    <mat-form-field appearance="outline" fxFlex="30%">
+                        <mat-label>Country code</mat-label>
+                        <input matInput type="email" formControlName="countryCode">
+                        <mat-error *ngIf="contactForm?.get('countryCode')?.hasError('required')">
+                            {{(message|async)?.REQUIRED_FORM_FIELD}}
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" fxFlex="70%">
+                        <mat-label>Phone number</mat-label>
+                        <input matInput type="email" formControlName="phoneNumber">
+                        <mat-error *ngIf="contactForm?.get('phoneNumber')?.hasError('required')">
+                            {{(message|async)?.REQUIRED_PHONE_NUMBER}}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row">
+                    <mat-form-field appearance="outline">
+                        <mat-label>How can we help you?</mat-label>
+                        <textarea matInput formControlName="questions"></textarea>
+                        <mat-error *ngIf="contactForm?.get('questions')?.hasError('required')">
+                            You must ask doubts
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="center">
+                   <button class="button" mat-raised-button color="primary" type="submit">submit</button>
+                </div>
+           </form>
+        </div>
+        <div fxFlex="50%" class="image-container"  fxLayoutAlign="center" >
+            <img src="../assets/contactus.png">
+        </div>
+    </div> 
+</div>
+
+      
