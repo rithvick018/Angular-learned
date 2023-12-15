@@ -13,9 +13,9 @@ export class UpsComponent implements OnInit {
   ngOnInit(): void {
   }
   onUpsCheck(){
-    console.log("I am ");
     this.authService.checkUps().subscribe(res =>{
-      
+        console.log("response is:",res);
+        
     })
   }
 }
