@@ -10,6 +10,7 @@ import { EditDialogComponent } from './edit-dialog/edit-dialog.component';
 import { DeleteDialogComponent } from './delete-dialog/delete-dialog.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { UpsComponent } from './ups/ups.component';
+import { UpsRedirectedComponent } from './ups-redirected/ups-redirected.component';
 
 
 
@@ -22,7 +23,8 @@ import { UpsComponent } from './ups/ups.component';
     EditDialogComponent,
     DeleteDialogComponent,
     ConfirmationComponent,
-    UpsComponent
+    UpsComponent,
+    UpsRedirectedComponent
   ],
   imports: [
     CommonModule,

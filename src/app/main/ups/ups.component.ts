@@ -15,7 +15,7 @@ export class UpsComponent implements OnInit {
   onUpsCheck(){
     console.log("I am ");
     this.authService.checkUps().subscribe(res =>{
-      console.log(res);
+      
     })
   }
 }

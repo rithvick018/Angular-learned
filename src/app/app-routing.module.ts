@@ -24,6 +24,7 @@ import { RetailFollowInstaComponent } from './theme/retail-follow-insta/retail-f
 import { PracticeBannerComponent } from './theme/practice-banner/practice-banner.component';
 import { ChartsComponent } from './theme/charts/charts.component';
 import { UpsComponent } from './main/ups/ups.component';
+import { UpsRedirectedComponent } from './main/ups-redirected/ups-redirected.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'login',pathMatch:'full'},
@@ -49,7 +50,8 @@ const routes: Routes = [
   {path: 'retail-follow', component: RetailFollowInstaComponent},
   {path: 'theme-practice', component: PracticeBannerComponent},
   {path: 'chart', component: ChartsComponent},
-  {path: 'ups', component: UpsComponent}
+  {path: 'ups', component: UpsComponent},
+  {path: 'ups-redirect', component: UpsRedirectedComponent}
 ];
 
 @NgModule({
